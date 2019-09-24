@@ -1,14 +1,15 @@
 <template>
   <div id="app">
-    <NavBar/>
+    <DefaultLayout>
     <router-view :key="$route.fullPath"/>
+    </DefaultLayout>
   </div>
 </template>
 <script>
-import NavBar from "@/components/NavBar.vue"
+import DefaultLayout from "@/layouts/DefaultLayout.vue"
 export default {
   components: {
-    NavBar
+    DefaultLayout
   }
 }
 </script>
@@ -24,10 +25,11 @@ export default {
 
 #nav a {
   font-weight: bold;
-  color: white;
+  color: black;
+  margin-left: 10px;
 }
 
 #nav a.router-link-exact-active {
-  color: white;
+  color: #ed7669;
 }
 </style>

@@ -4,6 +4,7 @@ import router from './router'
 import '@/assets/scss/style.scss'
 import '@/packages/fontawesome/index.js'
 
+
 Vue.config.productionTip = false
 
 new Vue({

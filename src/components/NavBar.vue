@@ -7,11 +7,11 @@
     
         <nav>
     
-            <router-link :to="{ name: 'home' }">Pagrindinis | </router-link> 
+            <router-link :to="{ name: 'home' }">Pagrindinis</router-link> 
     
-            <router-link :to="{ name: 'about' }">Apie mus  | </router-link> 
+            <router-link :to="{ name: 'about' }">Apie mus</router-link> 
 
-            <router-link :to="{ name: 'products' }">Užkandžiai  </router-link> 
+            <router-link :to="{ name: 'products' }">Užkandžiai</router-link> 
             <BaseIconButton
 				:icon="['fas', 'user']"
 			/>
@@ -35,28 +35,30 @@ export default {
 
 <style scoped>
 .nav {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    
     display: flex;
-    letter-spacing: 1mm;
+    letter-spacing: 0.5mm;
     font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    background-color: white;
+    color: black;
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.5);
     animation-duration: 1s;
     animation-timing-function: ease;
     animation-fill-mode: both;
     animation-name: slideDown;
+    opacity: 0.5!important;
+    
 }
 
 .nav>.brand {
     
     font-family: 'Indie Flower', cursive;
-    font-weight: 700;
     font-size: 2.8em;
-    color: white;
+    color: black;
     text-decoration: none;
     
 }
@@ -75,7 +77,7 @@ span:nth-child(2){
 }
 
 .nav .nav-item.router-link-exact-active {
-    color: white;
+    color: green;
     border-bottom: solid 2px white;
 }
 </style>

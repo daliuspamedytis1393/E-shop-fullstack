@@ -47,7 +47,7 @@ export default {
 
 		&__icon {
 			font-size: 23px;
-			color: white;
+			color: black;
 		}
 
 		&__badge {
